@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AboutActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:paddingRight="24dp"
+    android:paddingLeft="24dp"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/PrimaryDark"
+        android:textSize="20sp"
+        android:text="@string/app_name"
+        android:fontFamily="@font/sans_bold"
+        android:layout_marginRight="8dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/PrimaryDark"
+        android:layout_marginTop="16dp"
+        />
+
+    <!-- Version -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:text="نسخه :"
+        android:fontFamily="@font/sans_bold"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:text="1.0.0"
+        android:fontFamily="@font/sans_bold"
+        android:layout_marginRight="8dp" />
+    <!-- Update -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:text="اخرین بروز رسانی :"
+        android:fontFamily="@font/sans_bold"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:text="بهمن / 1399"
+        android:fontFamily="@font/sans_num_bold"
+        android:layout_marginRight="8dp" />
+    <!---->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/PrimaryDark"
+        android:textSize="20sp"
+        android:text="برنامه نویس"
+        android:fontFamily="@font/sans_bold"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/PrimaryDark"
+        android:layout_marginTop="16dp"
+        />
+    <!-- Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:text="نام :"
+        android:fontFamily="@font/sans_bold"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:text="علی آهنگری"
+        android:fontFamily="@font/sans_num_bold"
+        android:layout_marginRight="8dp" />
+    <!-- Site-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:text="سایت :"
+        android:fontFamily="@font/sans_bold"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:text="www.progali.ir"
+        android:fontFamily="@font/sans_bold"
+        android:layout_marginRight="8dp" />
+    <!-- Social Media -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="14sp"
+        android:text="شبکه های اجتمایی :"
+        android:fontFamily="@font/sans_bold"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp">
+        <!-- WatsApp -->
+        <TextView
+            android:layoutDirection="ltr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:textSize="16sp"
+            android:text="+98 937 208 2671"
+            android:fontFamily="@font/sans_num_bold"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/whatsapp"
+            app:tint="@color/teal_700"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="32dp"/>
+        <!-- Instagram-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:textSize="16sp"
+            android:text="\@ali.p.g.p"
+            android:fontFamily="@font/sans_num_bold"
+            />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/instagram"
+            app:tint="@color/teal_700"
+            android:layout_marginRight="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="316dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:layoutDirection="rtl"
+    android:id="@+id/net_error">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/view_alert"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/PinkRed">
+
+            <ImageView
+                android:id="@+id/error_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_baseline_perm_scan_wifi_24"
+                app:tint="@color/TextOnSecondary"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/PrimaryDark"
+            android:textSize="16sp"
+            android:text="خطا در اتصال"
+            android:fontFamily="@font/sans_bold"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/view_alert"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/DarkONP"
+            android:textSize="16sp"
+            android:text="یه اینترنت چک کن\nببین روشنه ؟"
+            android:fontFamily="@font/sans_normal"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/view_alert"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/bt_finish_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/PinkRed"
+            android:textSize="14sp"
+            android:fontFamily="@font/sans_bold"
+            android:text="باشه"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

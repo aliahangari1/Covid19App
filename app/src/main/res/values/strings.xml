@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">آمار جهانی کرونا</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contact_info">
+        اگر در مورد برنامه نظری دارید یا برنامه دچار اختلال یا باگ در اجرا شده
+        از شنیدن نظر شما خوشحال می شم
+    </string>
+    <string name="source"> منبع اطلاعات و آمار، سازمان جهانی می باشد
+        <a href="https://www.who.int/">who.int</a>
+    </string>
+
+    <string name="info">
+        مطالب موجود در برنامه تنها جنبه آموزشی و افزایش آگاهی دارند
+و نباید به‌عنوان توصیه‌های پزشکی در نظر گرفته شوند
+    </string>
+</resources>

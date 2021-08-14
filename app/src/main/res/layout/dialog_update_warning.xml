@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alert_dialog_parent"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/view_alert"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/PinkRed">
+
+            <ImageView
+                android:id="@+id/error_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_baseline_running_with_errors_24"
+                app:tint="@color/TextOnSecondary"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/PrimaryDark"
+            android:textSize="16sp"
+            android:text="خطا در بارگیری"
+            android:fontFamily="@font/sans_bold"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/view_alert"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/DarkONP"
+            android:textSize="16sp"
+            android:text="تا سرور داره اپدیت میشه\nبرید یه دوری بزنید"
+            android:fontFamily="@font/sans_normal"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/view_alert"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/bt_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/PinkRed"
+            android:textSize="14sp"
+            android:fontFamily="@font/sans_bold"
+            android:text="باشه"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

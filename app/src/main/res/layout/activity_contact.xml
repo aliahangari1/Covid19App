@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity"
+    android:layoutDirection="rtl"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--ToolBar-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/lyt_contact_us">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                app:tint="@color/PrimaryDark"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#33040B15"/>
+
+        </RelativeLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/head_animation"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            app:lottie_rawRes="@raw/contact_us"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/PrimaryDark"
+            android:text="چطور میتونم به شما کمک کنم ؟"
+            android:fontFamily="@font/sans_bold"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/PrimaryDark"
+            android:text="@string/contact_info"
+            android:fontFamily="@font/sans_normal"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:textColorHint="@color/teal_700"
+            android:hint="نام و نام خانوادگی"
+            android:textColor="@color/PrimaryDark"
+            android:textSize="12sp"
+            android:fontFamily="@font/sans_bold"
+            android:maxLines="1"
+            android:maxLength="32"
+            android:inputType="textPersonName"
+            android:background="@drawable/bg_edit_text_contact"/>
+
+        <EditText
+            android:id="@+id/et_subject"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:textColorHint="@color/teal_700"
+            android:hint="موضوع پیام"
+            android:textColor="@color/PrimaryDark"
+            android:textSize="12sp"
+            android:fontFamily="@font/sans_bold"
+            android:maxLines="1"
+            android:maxLength="32"
+            android:inputType="text"
+            android:background="@drawable/bg_edit_text_contact"/>
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="start"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:textColorHint="@color/teal_700"
+            android:hint="متن پیام ..."
+            android:textColor="@color/PrimaryDark"
+            android:textSize="12sp"
+            android:fontFamily="@font/sans_bold"
+            android:maxLines="6"
+            android:inputType="text"
+            android:background="@drawable/bg_edit_text_contact"/>
+
+        <Button
+            android:id="@+id/bt_send_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="64dp"
+            android:background="@drawable/bg_button_submit"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="ارسال"
+            android:fontFamily="@font/sans_bold"/>
+
+    </LinearLayout>
+</ScrollView>

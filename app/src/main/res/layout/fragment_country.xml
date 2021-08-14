@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    android:layoutDirection="rtl"
+    tools:context=".fragment.CountryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lyt_countries"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="82dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_search_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="@color/teal_300"
+                        android:hint="جستوجو  ( انگلیسی تایپ کنید )"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/sans_bold"
+                        android:drawableRight="@drawable/ic_baseline_search_white_24"
+                        android:drawablePadding="8dp"
+                        android:padding="8dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.75dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/TextOnSecondary"/>
+
+                    <!-- Info -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_recover"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="32dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="6sp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/Secondary"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:id="@+id/img_info"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/virus" />
+
+                            <TextView
+                                android:id="@+id/tv_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="16dp"
+                                android:layout_toLeftOf="@+id/img_info"
+                                android:fontFamily="@font/sans_bold"
+                                android:text="@string/source"
+                                android:textColor="@color/TextOnSecondary"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_view_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/api_progress_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+       android:textSize="24sp"
+        android:textColor="@color/Accent"
+        android:text="چند لحظه صبر کنید ..."
+        android:fontFamily="@font/sans_bold"/>
+
+
+</RelativeLayout>

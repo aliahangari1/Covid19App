@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- My App -->
+    <color name="Primary">#102950</color>
+    <color name="PrimaryDark">#040b15</color>
+    <color name="DarkONP">#0A1930</color>
+    <color name="LightONP">#576D91</color>
+    <color name="Accent">#FFB12A</color>
+    <color name="Secondary">#097BED</color>
+    <color name="TextOnSecondary">#FCE4EC</color>
+    <color name="TextOnEditText">#ddFCE4EC</color>
+    <!---->
+    <color name="LightRed">#FF4068</color>
+    <color name="PinkRed">#F10068</color>
+    <color name="DarkRed">#F1392F</color>
+    <color name="teal_300">#4db6ac</color>
+    <color name="teal_400">#26a69a</color>
+    <color name="teal_600">#00897b</color>
+    <color name="sweet_white">#E9EFED</color>
+    <color name="yellow">#BEF719</color>
+
+
+</resources>
